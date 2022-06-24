@@ -6,7 +6,7 @@ public class Task3 {
      * Create a method that will print whether
      * given String is palindrome or not.
      */
-    void printIspanindrome(String str) {
+    void printIspalinndrome(String str) {
 
         StringBuilder stringBuilder = new StringBuilder(str);
         stringBuilder.reverse();
@@ -20,7 +20,7 @@ public class Task3 {
 
     public static void main(String[] args) {
         Task3 task3 = new Task3();
-        task3.printIspanindrome("dad");
-        task3.printIspanindrome("Aladin");
+        task3.printIspalinndrome("dad");
+        task3.printIspalinndrome("Aladin");
     }
 }

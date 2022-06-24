@@ -6,7 +6,7 @@ Access Modifiers:
     access levels: 1. private, 2. protected, 3. public.
 
 Private:
-    When we use the privvate keyword with a method or field it is only
+    When we use the private keyword with a method or field it is only
     accessible inside that class. It is the most restricted access
     modifier.
 
@@ -14,7 +14,7 @@ Private:
     When we don't use any access modifier keyword with a field or a method
     then default access is applied by Java which means we can access this
     variable or method inside the same class as well as in all the other
-    classes which exist insider the same package.
+    classes which exist inside the same package.
 
  Protected:
     When we have protected access modifier we can access that method or

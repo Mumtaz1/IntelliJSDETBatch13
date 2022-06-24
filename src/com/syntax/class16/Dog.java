@@ -5,8 +5,6 @@ public class Dog {
     String name;
     String color;
     static int noOfLegs = 4;
-
-
     public static void main(String[] args) {
         Dog dog1 = new Dog();  //creating an object of a Dog class
         dog1.name = "Tomy";

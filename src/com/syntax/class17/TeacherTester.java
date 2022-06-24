@@ -9,7 +9,7 @@ public class TeacherTester {
 
         /*
         Because printInfo is public we can call
-        it in other classesa nd because its the
+        it in other classes and because it's the
         part of Teacher class it can access the
         private fields which in turn let us access
         those fields

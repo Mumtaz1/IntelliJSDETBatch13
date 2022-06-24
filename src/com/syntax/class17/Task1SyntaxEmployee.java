@@ -11,7 +11,7 @@ public class Task1SyntaxEmployee {
      */
     String empId;
     int salary;
-    //Whenever we are sure that two objects of a class can have differnt
+    //Whenever we are sure that two objects of a class can have different
     //values for a variable or if we have to share that variable between
     //two or more methods of that class we should always go with instance variables.
     static String ceo = "Sumair";

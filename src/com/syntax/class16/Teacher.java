@@ -6,7 +6,8 @@ public class Teacher {
     private int salary = 125555;
     public String schoolName;
 
-    public void pringInfo() {
+    public void printInfo() {
+
         System.out.println(name + " " + salary + " " +  schoolName);
     }
 

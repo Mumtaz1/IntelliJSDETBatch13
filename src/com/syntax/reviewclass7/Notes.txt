@@ -1,0 +1,55 @@
+Types of variables in Java:
+    We have 3 types of variables: 1. Local, 2. instance, 3. static.
+
+Local variables:
+     Are the variables that we declare inside a block of code.
+     upSide: They occupy the memory for shortest period of time.
+     downSide: They cannot be accessed outside of that block in which they
+               are declared.
+
+Instance variables:
+    Are the variables that are delared inside a class but outside a block of code.
+    upSide: Can be accessed in all methods of a clas. They can have different values
+          for each instance of that class. In line 9, 16, 28, 29, 33. for him in B13StringTester
+
+Static variables:
+     All the variables which are defined outside a block of code with static keyword
+     they are called static variables.
+     upSide:
+     1. they only reserve a single memory location for all the instances of a class.
+     2. they can be accessed by just writing the name of the class and variable name.
+     downSide:
+     They occupy the memory for the longest period of time. They always store only one
+     value for all the objects of that class.
+
+Real life use:
+    Most of the times you will storing constant values in static variables.
+    Static is also used heavily with methods that don't involve instance variables.
+
+Access modifiers:
+    There are 3 access modifier keywords (private, protected, public) and
+    4 access levels (private, default, protected, public) in Java.
+
+Rules: Access modifiers can only be used with instance and static members of a class (fields
+     and methods).
+
+private:
+    When we use private with any method or variable we can only access that method or
+    variable in that class.
+
+default (it is not a keyword):
+    We can access that member inside the same class, inside the same package, and in
+    other classes.
+
+public:
+    When we use the public access modifier with members of a class it is available
+    throughout that project.
+
+Real life use:
+    99% of the time instance fields are private.
+    99% of the time instance and static methods are public.
+
+=================================================================
+
+
+

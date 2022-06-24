@@ -1,0 +1,72 @@
+Whar are Constructors:
+    Constructor is a block of code that is used to construct objects.
+
+Why we should use Constructor:
+    Constructors help us initialize objects in a cleaner and more readable way.
+    They are better than methods because they are called automatically when we create
+    an object.
+    Most of the time fields are private and because of this reason we can't access them
+    outside the class in which they are declared and can't initialize them.
+
+How to use Constructor:
+    We create the constructor by writing a block of code that has same name as class name.
+    When we create the object of that class it is called automatically.
+
+Rules:
+    1. Constructor don't have a return type not even void.
+    2. Constructor should have same name as class name.
+    3. Constructor can have access modifiers like private, public and protected.
+    4. Constructor can't have non acess modifiers like static final synchronized.
+    5. Default constructor is provided by Java if we don't write one.
+    6. When we create the object of a class then a Constructor is called e.g.
+       if the class name is Dog, we can type: Dog dog1 = new Dog();
+    7. We can create multiple Constructor to give the other user flexibility that
+       they don't have to provide all the values to all the instance fields when
+       creating an object of our class.
+    8. We can call the constructor of a class by using this keyword with parenthesis
+       e.g., this() we can pass parameters and Java will decide based on these
+       parameters which constructor to call.
+
+"this" keyword:
+   Whenever we have same name variables as instance variables and local variables this
+   keyword can help us to resolve the conflict between local and instance variable.
+   e.g.
+   class Human {
+   String name = "sleeping Zombi";
+
+   void printName() {
+   String name = "wake up zombi";
+
+   System.out.println(this.name);  //sleeping zombi. If you didn't use this. then it would print wake up zombi
+   }
+
+   }
+   ============================================================
+What is inheritance?
+    Inheritance is a mechanism in Java through which we can get the properties and methods from the
+    Parent class inside the child class.
+
+Why we should use inheritance:
+    Inheritance helps us to reduce the amount of code that we have to write e.g., if there are
+    some properties and methods which are present in many classes we can create a
+    parent class for all of those properties and can put the common properties or methods inside
+    that parent class and can make children classes extend from that parent class.
+
+How we can use inheritance?
+    1. Create a parent class
+    2. Put all the common methods and properties from children classes inside that parent class.
+    3. Use extends keyword to inherit from that parent class.
+
+Types if inheritance:
+
+
+Rules:
+    1. private fields and private methods can't be inherited inside the children classes i.e., we
+       cannot access them.
+    2. Constructors are also not inherited.
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+Notes from
+this keyword - used to refer to the current object.
+this. - used wth instance variables.
+      - used with methods
+this() - used to call current class constructor.
+
+METHODS:
+   OPTIONAL                             MUST       MUST
+access modifier non access Modifiers    returnType name () {
+    logic;
+}
+
+VARIABLES:
+  OPTONAL       OPTIONAL                MUST     MUST
+access modifier non access Modifiers    dataType name;
+
+static members can work only with static members of the class
+instance members can work with both instance and non static members.
+
+4 access modifiers: public, default public, protected
+
+Access modifiers define visibility:
+private > default > protected > public
+
+private is available only in same class
+default available in same package
+protected  in same package unless you use inheritance
+public available in the entire project.
+
+

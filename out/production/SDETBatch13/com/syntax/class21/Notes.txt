@@ -1,0 +1,56 @@
+What is super keyword?
+    super keyword in Java is used to refer to the parent class object.
+
+Why should we learn super keyword?
+    1. If we have same name variable or method in the super/parent/base class
+       then we can use the super keyword to refer to parent class variable
+       or method because by default Java prefers the variables of the child
+       class. We can also call the super class constructor with the help of
+       super with parenthesis e.g., super();
+
+How to use super keyword:
+    1. We can use super. method name or field name to call the method or to
+       access the field of super class.
+    2. We can use the super with parenthesis to call the super class
+       constructor.
+
+Rules:
+    1. We can only access the immediate parent class constructor or
+       field or method with the help of super keyword.
+    2. We can only use super() inside the constructor.
+    3. If we have a user created constructor in the parent class we
+       must have a matching parameter constructor inside the child
+       classes as well.
+    4. If we have multiple constructors inside the parent as soon as
+       one is matches we are good to go. We do not need to match each
+       and every constructor from the parent class.
+    5. super() should be the first line inside a constructor.
+
+===================
+Important to know before we start Selenium and good for interviews:
+1. Arrays
+2. Loops
+3. If else conditions
+4. methods
+5. string class
+
+Note 2D Arrays not so important.
+
+=============================================
+
+Method Overloading:
+    When same name method exists in a class but with different number
+    of parameters or different type of parameters or different
+    sequence of parameters it is called methodOverloading.
+
+Why we should MethodOverloading?
+    1. Makes your code more readable.
+    2. Makes the life of the end user easy. They don't have to
+       memorize many method names.
+
+How we can use MethodOverloading?
+    We can have same name methods but we have to follow the
+    below rules:
+    1. by passing different number of parameters
+    2. we can change the datatype of parameters
+    3. we can also overload a method by changing the sequence of parameters.

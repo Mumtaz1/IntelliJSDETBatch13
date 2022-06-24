@@ -14,16 +14,20 @@ public class Methods108 {
     m2 method implementation
      */
 
-    String str1 = "m1 method implementation";
-    String str2 = "m2 method implementation";
 
+    void m1() {
+        System.out.println("m1 method implementation");
+    }
+    void m2() {
+        System.out.println("m2 method implementation");
+    }
     public static void main(String[] args) {
 
-        Methods108 m1 = new Methods108();
-        Methods108 m2 = new Methods108();
+        Methods108 str1 = new Methods108();
+        Methods108 str2 = new Methods108();
 
-        System.out.println(m1.str1);
-        System.out.println(m2.str2);
+        str1.m1();
+        str2.m2();
 
     }
 }

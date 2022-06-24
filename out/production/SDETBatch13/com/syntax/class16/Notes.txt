@@ -40,7 +40,7 @@ Local Variables:
       is called a static variable.
 
       Advantages:
-            They have the highest scope available even outside of an
+            They have the highest scope available even outside an
             object and are class level variables that is why it does
             not matter how many objects we created from that class
             only one variable is created.
