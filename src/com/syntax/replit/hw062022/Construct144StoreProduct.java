@@ -45,13 +45,15 @@ public class Construct144StoreProduct {
     Paper Towels 2.0 null false 0
     */
 
-    String label, category;
+    // Not working correctly
+
+    String lable, category;
     double price;
     boolean hasExpiration;
     int stock;
 
     Construct144StoreProduct(String label, double price, String category, boolean hasExpiration, int stock) {
-        this.label = label;
+        this.lable = lable;
         this.price = price;
         this.category = category;
         this.hasExpiration = hasExpiration;
@@ -59,34 +61,21 @@ public class Construct144StoreProduct {
     }
 
     Construct144StoreProduct(String label, double price, int stock) {
-        this.label = label;
+        this.lable = lable;
         this.price = price;
         this.stock = stock;
+        this.category = "misc";
+        this.hasExpiration = false;
     }
 
     Construct144StoreProduct(String label, double price) {
-        this.label = label;
+        this.lable = lable;
         this.price = price;
+        this.stock = 0;
     }
 
-    void display() {
-        System.out.print(label + " " + price + " " + category + " " + hasExpiration + " " + stock);
-    }
-
-    public static void main(String[] args) {
-        Construct144StoreProduct prod1 = new Construct144StoreProduct("Eggs", 3.0,
-                "Produce", true, 10);
-        System.out.println();
-        prod1.display();
-        Construct144StoreProduct prod2 = new Construct144StoreProduct("Paper Towels", 2.0,
-                    "misc", false, 24);
-        System.out.println();
-        prod2.display();
-
-        Construct144StoreProduct prod3 = new Construct144StoreProduct("Paper Towels", 2.0,
-                    "null", false, 0);
-        System.out.println();
-        prod3.display();
-
+    public void display() {
+        System.out.println(lable + " " + price + " " + category + " " + hasExpiration + " " + stock);
     }
 }
+

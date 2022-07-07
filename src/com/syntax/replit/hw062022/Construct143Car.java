@@ -42,52 +42,38 @@ public class Construct143Car {
 
     String make;
     String model;
-    String numberOfDoors;
-  //  int numberOfDoors;
+    int numberOfDoors;
     int topSpeed;
     double price;
-
-    Construct143Car(String make, String model, String numberOfDoors, int topSpeed, double price) {
+    Construct143Car(String make, String model, int numberOfDoors, int topSpeed, double price){
         this.make = make;
         this.model = model;
         this.numberOfDoors = numberOfDoors;
         this.topSpeed = topSpeed;
         this.price = price;
     }
-
-    Construct143Car(String make, String model, int topSpeed, double price) {
+    Construct143Car(String make, String model, int topSpeed, double price){
         this.make = make;
         this.model = model;
+        this.numberOfDoors = 4;
         this.topSpeed = topSpeed;
         this.price = price;
     }
-
-    Construct143Car(int numberOfDoors, int topSpeed, double price) {
+    Construct143Car(int numberOfDoors, int topSpeed, double price){
+        this.make = "unknown";
+        this.model = "unknown";
+        this.numberOfDoors = numberOfDoors;
         this.topSpeed = topSpeed;
         this.price = price;
     }
-
-    Construct143Car(String make, String model, int numberOfDoors) {
+    Construct143Car(String make, String model, int numberOfDoors){
         this.make = make;
         this.model = model;
+        this.numberOfDoors = numberOfDoors;
+        this.topSpeed = 90;
+        this.price = 0;
     }
-
-    void display() {
-        System.out.println(make + " " + model + " " + numberOfDoors + " " + topSpeed + " " + price);
+    String displayData(){
+        return make+" "+model+" "+numberOfDoors+" "+topSpeed+" "+price;
     }
-
-    public static void main(String[] args) {
-        Construct143Car car1 = new Construct143Car("Toyota", "Prius", "4", 120, 30000.0);
-        car1.display();
-
-        Construct143Car car2 = new Construct143Car("Toyota", "Prius", "4", 120, 30000.0);
-        car2.display();
-
-        Construct143Car car3 = new Construct143Car("unknown", "unknown", "4", 120, 30000.0);
-        car3.display();
-
-        Construct143Car car4 = new Construct143Car("Toyota", "Prius", "", 4,  90.0);
-        car4.display();  //it's printing a 0 after Prius. So, I changed numberOfDoors from int to String but now
-        //I get Toyota Prius  4 90 0.0 (there is a blank space between Prius and 4).
-        }
 }

@@ -1,0 +1,126 @@
+OOPS is just a way of writing code. A methodology, a set of rules that we follow when
+we write code. In this methodoogy we create classes and objects of those classes to
+represent everything from real life.
+
+We also have:
+    1. Functional Programming
+    2. Procedural programming
+
+
+ Four Pillars of OOPS: - Important for inteview
+    1. Inheritance
+    2. Polymorphism
+    3. Abstraction
+    4. Encapsulation
+
+ Some of the benefits of OOPs:
+    1. Code re-usability
+    2. Cleaner code
+    3. More flexibiliyt
+    4. Less code
+    5. Enforcing rules and hiding the complexity and only focusing
+       on the ideas.
+    6. Secure code.
+
+ 1. Inheritance
+        This is a mechanism in Java through which a class ca acquire the
+        properties and methods of another classes.
+
+ Why shoould we use Inheritance?
+    If a piece of code is already present in a class instead of rewriting
+    it or copying it, we can extend our class from that class and we will
+    get all the non-private methods and fields from that class. It can
+    save a lot of time. It is also good for performance reasons.
+
+ Disadvantages of Inheritance:
+    1. We get the unwanted code as well when we inherit from a class.
+    2. Classes are tightly coupled which means if we change something
+       in the parent class, it affects all the child classes.
+
+ How can we use Inheritance?
+    We use the extends keyword to inherit the classes.
+
+  class Parent {
+  String name;
+
+  void printName() {
+
+  }
+  }
+  class Child extends Parent {
+
+  }
+  Rules:
+    1. Inheritance is one way from parent to child only.
+    2. In Java, we cannot inherit from multiple classes.
+    3. Final classes can't be inherited. Classes which are declared with
+       final keyword are called final classes.
+    4. Private members (fields and methods) are not inherited.
+    5. Constructors are not inherited but we can call them using
+       super().
+    6. Child classes must provide a matching constructor.
+
+  Types of Inheritance:
+    1. Single inheritance
+    2. Multilevel inheritance
+    3. Hierarchical inheritance
+    4. Multiple inheritance (not supported in Java).
+
+  Single inheritance:
+    Only one parent and one child class.
+
+  Multilevel inheritance
+    When we have a parent and a child class and one or more intermediate classes
+    we call it multilevel inheritance.
+
+  Hierarchical inheritance:
+    When we have a single Parent class and multiple direct child classes it is
+    called Hierarchical.
+
+  ==============================================================
+
+  Super keyword:
+    Super is a keyword that we use  to refer to the parent class fields
+    methods or constructors.
+
+  Why should we use the super keyword?
+    1. If we have same name fields inside the parent class and child class we
+       can use the super keyword to distinguish these fields. It is not that
+       common.
+    2. We can use the super() to call the constructor of the parent class as
+       they are not inherited.
+    3. If we have same name methods inside the parent and the child class we can
+       use super keyword to call the method from the parent class.
+
+  ====================================================
+
+  Method Overloading:
+    Whenever the same name method exists in a class with different parameters
+    we call it method overloading.
+
+  Why we should use Method Overloading:
+    It helps us write more cleaner and readable code and also provides the
+    flexibility to have same name methods in a class.
+
+  How to create an Overloaded method:
+    Create same method name but make sure this differs in the number of
+    parameters, or in types of parameters, or in sequence of parameters.
+
+  Rules:
+     1. Method name should be the same but parameters should be different.
+     2. By just changing the return type we can't overload a method.
+     3. We can't overload by just changing the access modifiers (private,
+        protected, default, public) and non-access modifiers (final,
+        abstract, static).
+     4. We can also overload constructors in the same manner as we do for
+        methods.
+
+
+
+
+
+
+
+
+
+

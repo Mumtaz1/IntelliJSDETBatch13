@@ -22,6 +22,7 @@ public class Task3 {
     }
 
     public static void main(String[] args) {
+
         Task3.sayHello("Zameer stop wasting time on IG",5);
     }
 }

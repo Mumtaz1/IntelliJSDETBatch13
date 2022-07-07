@@ -30,25 +30,27 @@ public class Construct142 {
 
     //Non-argument Constructor:
     Construct142() {
-        System.out.println();
+
     }
 
     //Parameterized Constructor:
-    Construct142(String name, int batchNo, int yr, String classEnds) {
-        schoolName = name;
-        batch = batchNo;
-        year = yr;
-        lastDayOfClass = classEnds;
-    }
-    void display() {
-        System.out.println(schoolName + " " + batch + " " + year + " " + lastDayOfClass);
+    Construct142(String schoolName, int batch, int year, String lastDayOfClass) {
+        this.schoolName = schoolName;
+        this.batch = batch;
+        this.year = year;
+        this.lastDayOfClass = lastDayOfClass;
     }
 
-    public static void main(String[] args) {
-        Construct142 obj1 = new Construct142();
-        obj1.display();
+    String displayInfo() {
 
-        Construct142 obj2 = new Construct142("Syntax", 6, 2020, "07/30/2020");
-        obj2.display();
+        return schoolName + " " + batch + " " + year + " " + lastDayOfClass;
     }
-}
+        public static void main(String[] args) {
+
+            Construct142 obj1 = new Construct142();
+            System.out.println(obj1.displayInfo());
+
+            Construct142 obj2 = new Construct142("Syntax", 6, 2020, "07/30/2020");
+            System.out.println(obj2.displayInfo());
+        }
+    }

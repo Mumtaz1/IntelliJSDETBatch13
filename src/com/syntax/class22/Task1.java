@@ -18,7 +18,7 @@ public class Task1 {
         System.out.println("Area of Square "+(length*length));
     }
 
-    static   void volume(double len,double wid,double hi){
+    static void volume(double len,double wid,double hi){
         System.out.println("Volume of box "+(len*wid*hi));
     }
 

@@ -39,6 +39,7 @@ class UserInfo extends UserClass{
           this.userAddress=userAddress;
       }*/
     void printInfo(){
+
         System.out.println("Name "+name+" Mobile Number "+mobileNumber+" User address "+userAddress);
     }
 }

@@ -1,0 +1,64 @@
+What is an interface?
+    An interface is a contract that is similar to a class but all the fields inside a class
+    are public static final (constants) and all the methods by default are also public.
+
+Why we should learn about interfaces?
+    1. We can implement abstraction using interfaces.
+    2. When classes are logically connected to each other and we want to have instance
+       fields and implemented methods as well while doing abstraction then we should go
+       with abstract class.
+
+Howe can we use an interface?
+    We use interface keyword instead of a class and we can start creating abstract methods.
+
+Rules:
+    1. All the fields inside an interface are public static and final.
+    2. No instance fields means no constructor is required.
+    3. No instance methods in an interface and all the methods by defaul are abstract.
+    4. When we implements th methods from the interface we use implements keyword.
+    5. Multiple inheritance is supported by interfaces in Java.
+    6. An interface can extend another interface.
+    7. Variables in interfaces can't be private, protected or default.
+
+===================================================================
+
+What is Encapsulation in Java?
+    Encapsulation is the 4th pillar of OOPs and it is a mechanism that provides us security.
+    If we use encapsulation we can have more security.
+
+How we should use Encapsulation?
+    1. Make your cariables as private.
+    2. Create setter and getter methods to read and write these fields.
+
+===================================================================
+
+Basic unit to store data is a variable.
+It is easy to access the value by variable name. We don't need to be concerned about indexes.
+Problems with variables:
+    1. They can only store one value at a time.
+    2. If we have to store more than 1 value using variables, we have to
+       declare more variables.
+
+Arrays:
+    Arrays can hold multiple values in a single variable. We then use indexes
+    to access those values.
+
+Advantages of Arrays:
+    1. Arrays are the fasted data structure when it comes to process the data.
+    2. Arrays occupy 4 times less memory than an arrayList.
+
+
+Problems with Arrays:
+    1. They are fixed in size, which means once we have create an array we can't
+       modify its size.
+    2. No built-in methods in arrays like add, remove, findIndex, etc.
+
+ArrayList:
+    add() -- we use it to add the elements to an arrayList.
+    remove() --
+    ArrayList uses <> which is called diamond operator.
+    Note: press ctrl + c to select the complete line
+          press shift + end to select all the characters starting from your cursor to the end of the line.
+          press soutv to print the last variable
+          type iter to loop through the elements
+          type reiter to loop in reverse order

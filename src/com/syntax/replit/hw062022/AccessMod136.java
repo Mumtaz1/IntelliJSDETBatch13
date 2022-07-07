@@ -22,15 +22,19 @@ public class AccessMod136 {
      */
 
     private void priMeth() {
+
         System.out.println("This is Private Method");
     }
     void defMeth() {
+
         System.out.println("This is Default Method");
     }
     protected void proMeth() {
+
         System.out.println("This is Protected Method");
     }
     public void pubMeth() {
+
         System.out.println("This is Public Method");
     }
 

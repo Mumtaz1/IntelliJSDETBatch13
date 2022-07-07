@@ -11,8 +11,6 @@ public class CreditCard {
     - Call the method by creating an object of each of the three classes.
      */
 
-  //Something is not quite right. It prints out 2 lines of l23.
-
   //HW2:
     double balance;
     double interest;

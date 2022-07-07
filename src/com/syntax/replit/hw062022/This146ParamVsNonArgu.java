@@ -11,7 +11,7 @@ public class This146ParamVsNonArgu {
     - startDate(String)
     - salary(int)
     Write two constructors:
-    - non-argument constructor
+    - non argument constructor
     - parameterized constructor
     Create two different objects of the
     Employee class using both
@@ -27,7 +27,13 @@ public class This146ParamVsNonArgu {
     int employeeID;
     String startDate;
     int salary;
-/*
+
+    //Default constructor aka non argument constructor
+    This146ParamVsNonArgu() {
+
+    }
+
+    //Parameterized constructor
     This146ParamVsNonArgu(String name, String lastName, int employeeID, String startDate, int salary) {
         this.name = name;
         this.lastName = lastName;
@@ -36,14 +42,7 @@ public class This146ParamVsNonArgu {
         this.salary = salary;
     }
 
-    public static void main(String[] args) {
-        This146ParamVsNonArgu emp = new This146ParamVsNonArgu();
-        System.out.println(emp.name + " " + emp.lastName + " " + emp.employeeID + " "
-                + emp.startDate + " " + emp.salary);
-
-        This146ParamVsNonArgu emp1 = new This146ParamVsNonArgu("Joe", "Smith",
-                12345, "01/01/1970, 35000");
-        System.out.println(emp1.name + " " + emp1.lastName + " " + emp1.employeeID + " "
-                + emp1.startDate + " " + emp1.salary);
-    } //error on line 40 and 44-45. */
+    String printValues() {
+        return name + " " + lastName + " " + employeeID + " " + startDate + " " + salary;
+    }
 }
