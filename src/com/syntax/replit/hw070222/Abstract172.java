@@ -16,14 +16,3 @@ public class Abstract172 {
     //So a class can be derived from the base class in Java by using the extends keyword
 
 }
-abstract class Parent {
-    abstract public void m1();
-
-    public void m2() {
-
-    }
-
-    public static void main(String[] args) {
-
-    }
-}

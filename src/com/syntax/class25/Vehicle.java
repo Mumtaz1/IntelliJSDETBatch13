@@ -27,10 +27,8 @@ public abstract class Vehicle {
             double calculateSalePrice() {
             if (weight > 2000) {
                 vehiclePrice = (vehiclePrice * 10) / 100;
-        //        System.out.println("The price of the truck includes a 10% discount " + discountPrice);
             } else {
                 vehiclePrice = (vehiclePrice * 20) / 100;
-        //        System.out.println("The price of the truck includes a 20% discount " + discountPrice);
             }
             return vehiclePrice;
         }

@@ -1,6 +1,8 @@
 package com.syntax.class25;
 
 public class BankAccount {
+
+    //Encapsulation - using Setter / Getter methods. The main method is in AccountTester.
     private String name;
     private String username;
     private String password;

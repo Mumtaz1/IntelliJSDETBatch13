@@ -18,8 +18,5 @@ public interface Parent176 {
     Child Method-hello Syntax
      */
 
-    void parentMethod();
-}
-interface childInterface {
 
 }

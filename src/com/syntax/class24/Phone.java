@@ -2,15 +2,14 @@ package com.syntax.class24;
 
 public abstract class Phone {
 
-    abstract void displayPictures();
-    abstract void unlock();
+    abstract void displayPictures(); //unimplemented method
+    abstract void unlock();         //unimplemented method
 
-    void sendText() {
+    void sendText() {       //implemented method
         System.out.println("Use the messaging app to send the message");
     }
 
 }
-
 class Iphone extends Phone {
     @Override
     void displayPictures() {

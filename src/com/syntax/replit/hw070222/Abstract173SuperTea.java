@@ -1,6 +1,5 @@
 package com.syntax.replit.hw070222;
-
-public class Abstract173SuperTea {
+abstract class Abstract173SuperTea {
 
     /*
     Abstraction:
@@ -16,5 +15,37 @@ public class Abstract173SuperTea {
     For Lemon tea we need 2 spoons of sugar
     For Chai Tea we need 1 spoon of sugar.
      */
+        abstract void addSugar();
 
-}
+        String teaType;
+    Abstract173SuperTea(String teaType)  {
+            this.teaType = teaType;
+        }
+    }
+    class LemonTea extends Abstract173SuperTea {
+        LemonTea(String teaType) {
+            super(teaType);
+        }
+        @Override
+        void addSugar() {
+            System.out.println("For Lemon Tea we need 2 spoons of sugar");
+        }
+    }
+    class ChaiTea extends Abstract173SuperTea {
+        ChaiTea(String teaType) {
+            super(teaType);
+        }
+        @Override
+        void addSugar() {
+            System.out.println("For Chai Tea we need 1 spoon of sugar");
+
+        }
+    }
+    class Main {
+        public static void main(String[] args) {
+            LemonTea lemon = new LemonTea("Lemon Tea");
+            lemon.addSugar();
+            ChaiTea chai = new ChaiTea("Chai Tea");
+            chai.addSugar();
+        }
+    }

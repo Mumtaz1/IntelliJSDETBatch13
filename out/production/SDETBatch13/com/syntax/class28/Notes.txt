@@ -1,0 +1,67 @@
+What is a list?
+    List is an interface inside the collections framework which has below properties
+    1. Insertion order is maintained.
+    2. We can store duplicate data.
+
+List is implemented by many classes but we will focus on ArrayList and LinkedList.
+    ArrayList:
+        When the requirement is to read a lot of data then we should use ArrayList.
+    LinkeList:
+        Most of our operations will be writing the data to a list in between or at the start
+        or shifting the data from one location to another location, then we should use
+        LinkedList.
+
+Iterator:
+    Is an interface that has three methods: hasNext(), next(), and remove().
+    Whenever we try to modify the size of a list using a simple loop there are
+    chances that it will not work or will throw an error because lists are
+    dynamic and can change the size at runtime. So, to be safe we should use
+    Iterators.
+
+===============================================
+Set:
+    1. Duplicates are not allowed.
+
+We will be discussing three types of sets:
+    1. HashSet
+    2. LinkedHasSet
+    3. TreeSet
+
+HashSet:
+    Upside: it is the fastest of all.
+    Downside: No insertion order is maintained
+
+LinkedHashSet:
+    Upside: Insertion order is maintained
+    Downside: retrieval of elements will be super slow.
+    Insertion speed slower than HashSet;
+
+TreeSet:
+    Upside: Elements will always be in sorted form.
+    Downside: Insertion speed is slowest of all.
+    Retrieval speed is better than LinkedList but slower than Hashset.
+
+================================
+
+Map:
+    Map is an interface in Java that allows us to store a key value pairs.
+    We cannot have duplicate keys but we can have duplicate values.
+    We will be discussing three of them:
+    1. HashMap
+    2. LinkedHashMap
+    3. TreeMap
+
+HashMap:
+    Upside: Fastest when it comes to insett and retrieve the elements.
+    Downside: No insertion order .
+
+LinkedHashMap:
+    Upside: Insertion order will be maintained.
+    Downside: Retrieval will be slowest.
+
+TreeMap:
+    Upside: Data wo;; be stored in the sorted form based on keys.
+    Downside: Insertion is the slowest.
+
+
+

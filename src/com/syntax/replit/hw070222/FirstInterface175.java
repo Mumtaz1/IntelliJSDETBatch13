@@ -1,6 +1,6 @@
 package com.syntax.replit.hw070222;
 
-public interface FirstInterface175 {
+/* class FirstInterface175 implements FirstInterface, SecondInterface {
 
     /*
     ** Follow steps carefully.
@@ -18,29 +18,3 @@ public interface FirstInterface175 {
 
  // Works here but not in Replit. Get non-static variable this cannot be referenced from a static context
 
-    interface FirstInterface {
-        void firstMethod();
-    }
-    interface SecondInterface {
-        void secondMethod();
-    }
-    class Interface implements FirstInterface, SecondInterface {
-
-        @Override
-        public void firstMethod() {
-            System.out.println("First Method implementing multiple Inheritance");
-        }
-
-        @Override
-        public void secondMethod() {
-            System.out.println("Second Method implementing multiple Inheritance");
-        }
-    }
-    public class MultiInt {
-        public static void main(String[] args) {
-            Interface obj = new Interface();
-            obj.firstMethod();
-            obj.secondMethod();
-        }
-    }
-}
